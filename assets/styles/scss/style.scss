@@ -1,0 +1,95 @@
+@import "_null";
+
+body {
+  width: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding: 50px;
+
+  background: url("https://www.transparenttextures.com/patterns/textured-paper.png");
+  background-color: rgb(163, 141, 68);
+
+  font-family: "Kanit", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 150%;
+}
+
+.content {
+  padding: 25px 0;
+}
+
+textarea {
+  width: 300px;
+  min-height: 200px;
+  padding: 20px;
+
+  border: 2px solid #ffffff;
+  background-color: rgb(31, 28, 28);
+  border-radius: 20px;
+  opacity: 0.5;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+// -----------------------------TABLE-------------------------------------
+
+.table {
+  border-collapse: collapse;
+
+  &__item {
+    padding: 5px;
+  }
+
+  &__container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__header {
+    padding: 30px 0;
+
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+}
+
+.th,
+.td {
+  padding: 10px;
+
+  border: 2px solid #ffffff;
+  align-items: center;
+}
+
+.th {
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(175, 189, 184);
+  }
+}
+
+// --------------------------block---------------------------------
+
+.block {
+  width: 400px;
+  height: 200px;
+  padding: 30px;
+  margin-top: 50px;
+
+  border: 2px solid #ffffff;
+  resize: both;
+  overflow: auto;
+}
